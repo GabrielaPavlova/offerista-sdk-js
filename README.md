@@ -4,15 +4,15 @@ This repository contains a simple GitHub SDK and a web application that demonstr
 
 ## Getting Started
 
-### Prerequisites
-
-- Node.js and npm installed
-
 ### Installation
 
 1. Clone the repository:
 
-git clone https://github.com/your-username/github-sdk-web-app.git
+git clone https://github.com/GabrielaPavlova/offerista-sdk-js.git
+
+### Prerequisites
+
+- npm install
 
 ### Usage
 
@@ -20,20 +20,17 @@ git clone https://github.com/your-username/github-sdk-web-app.git
 
 npm start 
 
-This will start the server at http://localhost:3000.
+This will start the server at http://localhost:8080.
 
 2. Open the web application in your browser:
-http://localhost:3000
+http://localhost:8080
 3. Enter your GitHub API token in the "Enter GitHub API Token" input field and click the "Authenticate" button.
 4. Enter a GitHub User ID in the "Enter GitHub User ID" input field and click the "Fetch User Data" button.
-
-### SDK Documentation
-
-The SDK documentation is available in the web application at http://localhost:3000.
 
 ### Test 
 
 Unit tests for the SDK functions are available in the tests directory.
+
 To run tests:
 
 npm test
