@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Offerista SDK</title>
+    <script defer src="/v1.0.0/offerista-sdk-unstable.js"></script>
+  </head>
+  <body>
+    <h1>GitHub User Data</h1>
+    <h2><a href="/v1.0.0/documentation.html">Documentation</a></h2>
+
+    <div>
+      <label for="apiTokenInput">Enter GitHub API Token:</label>
+      <input type="text" id="apiTokenInput">
+      <button onclick="authenticateWithToken()">Authenticate</button>
+    </div>
+  
+    <div style="margin-top: 20px;">
+      <label for="userIdInput">Enter GitHub User ID:</label>
+      <input type="text" id="userIdInput">
+      <button onclick="fetchGitHubUserData()">Fetch User Data</button>
+    </div>
+  
+    <div id="userDataContainer"></div>
+
+   <script defer src="exampleUsage.js"></script>
+  </body>
+</html>

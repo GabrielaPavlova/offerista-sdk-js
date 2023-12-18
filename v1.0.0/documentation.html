@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub User Data</title>
+  </head>
+  <body>
+    <h1>GitHub User Data</h1>
+
+    <div>
+      <label for="apiTokenInput">Enter GitHub API Token:</label>
+      <input type="text" id="apiTokenInput" />
+      <button onclick="authenticateWithToken()">Authenticate</button>
+    </div>
+
+    <div style="margin-top: 20px">
+      <label for="userIdInput">Enter GitHub User ID:</label>
+      <input type="text" id="userIdInput" />
+      <button onclick="fetchGitHubUserData()">Fetch User Data</button>
+    </div>
+
+    <div id="userDataContainer">
+      <h2>Documentation:</h2>
+      <p>
+        <strong>GitHub SDK Documentation</strong>
+      </p>
+      <p>
+        The GitHub SDK provides functionality to authenticate with the GitHub
+        API using a token and fetch user data based on a user ID.
+      </p>
+      <h3>1. Authentication</h3>
+      <p>
+        To authenticate with the GitHub API, enter your GitHub API token in the
+        "Enter GitHub API Token" input field and click the "Authenticate"
+        button. This action sets the API token in the SDK for subsequent
+        requests.
+      </p>
+      <h4>HINT! From where to get your API Token</h4>
+      <p>
+        "GitHub Account: If you don't have a GitHub account, you'll need to sign
+        up for one: GitHub Sign Up Generate Personal Access Token: Once you have
+        a GitHub account, go to your GitHub settings by clicking on your profile
+        picture in the top right corner and selecting "Settings." In the left
+        sidebar, click on "Developer settings." Click on "Personal access
+        tokens." Click the "Generate token" button. Provide a name for your
+        token, select the scopes (permissions) needed for your application, and
+        click "Generate token." Copy the generated token and keep it in a secure
+        place. Note: Treat your tokens like passwords and keep them secret. Use
+        the Token in Your SDK: Replace the placeholder 'your-github-token' in
+        the example code with the actual token you generated. Now, your SDK will
+        use this token to authenticate requests to the GitHub API. Be mindful of
+        the scopes you select when generating the token; they determine what
+        actions your token is allowed to perform. Remember that it's good
+        practice to store sensitive information like tokens in a secure way,
+        such as using environment variables, rather than hardcoding them
+        directly into your code."
+      </p>
+      <p>
+        <strong>Example:</strong>
+        <code>githubSDK.authenticate(apiToken);</code>
+      </p>
+      <h3>2. Fetch User Data</h3>
+      <p>
+        After successful authentication, enter a GitHub User ID in the "Enter
+        GitHub User ID" input field and click the "Fetch User Data" button. This
+        action fetches user data from the GitHub API using the authenticated
+        SDK.
+      </p>
+      <h4>Hint! From where to get userID</h4>
+      <p>
+        You go to a user's GitHub profile, the user ID is part of the URL. For
+        example, in the URL https://github.com/GabrielaPavlova, the user ID is
+        'GabrielaPavlova'.
+      </p>
+      <p>
+        <strong>Example:</strong>
+        <code>const userData = await githubSDK.getUserData(userId);</code>
+      </p>
+    </div>
+  </body>
+</html>
