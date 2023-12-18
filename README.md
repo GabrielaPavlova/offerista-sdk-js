@@ -8,7 +8,7 @@ This repository contains a simple GitHub SDK and a web application that demonstr
 
 1. Clone the repository:
 
-git clone https://github.com/GabrielaPavlova/offerista-sdk-js.git
+- git clone https://github.com/GabrielaPavlova/offerista-sdk-js.git
 
 ### Prerequisites
 
@@ -18,7 +18,7 @@ git clone https://github.com/GabrielaPavlova/offerista-sdk-js.git
 
 1. Run the server:
 
-npm start 
+- npm start 
 
 This will start the server at http://localhost:8080.
 
@@ -33,7 +33,7 @@ Unit tests for the SDK functions are available in the tests directory.
 
 To run tests:
 
-npm test
+- npm test
 
 ## License
 
