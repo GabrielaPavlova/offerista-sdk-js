@@ -10,6 +10,8 @@ This repository contains a simple GitHub SDK and a web application that demonstr
 
 - git clone https://github.com/GabrielaPavlova/offerista-sdk-js.git
 
+- cd offerista-sdk-js
+
 ### Prerequisites
 
 - npm install
